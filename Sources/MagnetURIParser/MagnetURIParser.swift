@@ -3,7 +3,7 @@
 
 import Foundation
 
-func parseMagnetURI(_ link: String) -> MagnetLink {
+public func parseMagnetURI(_ link: String) -> MagnetLink {
     let components = URLComponents(string: link)
     let items = components?.queryItems
     let out = MagnetLink()
@@ -13,7 +13,7 @@ func parseMagnetURI(_ link: String) -> MagnetLink {
     return out
 }
 
-class MagnetLink {
+public class MagnetLink {
     var dn: String = ""
     var xt: String = ""
     var tr: [String] = []
