@@ -14,9 +14,9 @@ public func parseMagnetURI(_ link: String) -> MagnetLink {
 }
 
 public class MagnetLink {
-    var dn: String = ""
-    var xt: String = ""
-    var tr: [String] = []
+    public var dn: String = ""
+    public var xt: String = ""
+    public var tr: [String] = []
     
     func addPart(item: URLQueryItem) {
         if let value = item.value {
